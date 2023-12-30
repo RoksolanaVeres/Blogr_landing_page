@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blogr Landing Page</title>
+  </head>
+  <body class="flex justify-center">
+    <!-- main container -->
+    <div
+      class="h-full w-full max-w-screen-xl overflow-x-hidden bg-white font-ubuntu"
+    >
+      <!-- header section -->
+      <section
+        class="intro h-[600px] rounded-bl-[100px] bg-gradient-to-b from-orangeRed to-lighterRed px-6 pt-14 xl:px-40"
+      >
+        <!-- header -->
+        <header class="flex items-center justify-between">
+          <!-- logo img -->
+          <img src="./images/logo.svg" alt="" class="h-8 w-20" />
+
+          <!-- navigation links container -->
+          <nav
+            class="nav-links absolute left-1/2 top-32 z-20 hidden w-11/12 -translate-x-1/2 transform rounded-lg bg-white px-6 py-10 shadow-lg lg:relative lg:left-0 lg:top-0 lg:block lg:flex-1 lg:-translate-x-px lg:bg-transparent lg:py-5 lg:pl-16 lg:shadow-none"
+          >
+            <ul
+              class="grid gap-8 text-base font-medium lg:flex lg:text-white/70"
+            >
+              <li
+                class="nav-category relative grid cursor-pointer justify-center gap-2"
+              >
+                <a
+                  class="mx-auto after:ml-2 after:inline-block after:content-arrowDark hover:underline lg:after:content-arrowLight lg:hover:text-white"
+                  >Product</a
+                >
+
+                <ul
+                  class="product hidden w-[275px] justify-center gap-4 rounded-lg bg-lightGray py-6 text-sm font-normal text-black shadow-lg lg:absolute lg:-left-6 lg:top-12 lg:w-[170px] lg:justify-start lg:bg-white lg:px-5"
+                >
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Overview</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Pricing</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Marketplace</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Features</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Integrations</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-category relative grid cursor-pointer justify-center gap-2"
+              >
+                <a
+                  class="mx-auto after:ml-2 after:inline-block after:content-arrowDark hover:underline lg:after:content-arrowLight lg:hover:text-white"
+                  href="#"
+                  >Company</a
+                >
+
+                <ul
+                  class="company hidden w-[275px] justify-center gap-4 rounded-lg bg-lightGray py-6 text-sm font-normal text-black shadow-lg lg:absolute lg:-left-6 lg:top-12 lg:w-[170px] lg:justify-start lg:bg-white lg:px-5"
+                >
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">About</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Team</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Blog</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Careers</a>
+                  </li>
+                </ul>
+              </li>
+              <li
+                class="nav-category relative grid cursor-pointer justify-center gap-2"
+              >
+                <a
+                  class="mx-auto after:ml-2 after:inline-block after:content-arrowDark hover:underline lg:after:content-arrowLight lg:hover:text-white"
+                  >Connect</a
+                >
+
+                <ul
+                  class="connect hidden w-[275px] justify-center gap-4 rounded-lg bg-lightGray py-6 text-sm font-normal text-black shadow-lg lg:absolute lg:-left-6 lg:top-12 lg:w-[170px] lg:justify-start lg:bg-white lg:px-5"
+                >
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Contact</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Newsletter</a>
+                  </li>
+                  <li class="w-[100px] hover:font-bold">
+                    <a href="#">Linkedin</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <!-- MOBILE buttons container -->
+            <div class="grid justify-center gap-3 font-overpass lg:hidden">
+              <div class="mt-6 h-0.5 w-[275px] bg-lightGray"></div>
+              <a href="#"
+                ><button
+                  class="font-base w-full rounded-full bg-inherit px-10 py-3 font-bold text-black hover:bg-lightPink"
+                >
+                  Login
+                </button></a
+              >
+              <a href="#"
+                ><button
+                  class="font-base w-full rounded-full bg-gradient-to-r px-10 py-3 font-bold text-white"
+                >
+                  Sign Up
+                </button></a
+              >
+            </div>
+          </nav>
+          <!-- DESKTOP buttons container -->
+          <div class="hidden gap-7 lg:flex">
+            <a href="#"
+              ><button
+                class="font-base rounded-full bg-inherit px-10 py-3 font-medium text-white/70"
+              >
+                Login
+              </button></a
+            >
+            <a href="#"
+              ><button
+                class="font-base rounded-full bg-white px-10 py-3 font-medium text-lighterRed hover:bg-lightPink hover:text-white"
+              >
+                Sign Up
+              </button></a
+            >
+          </div>
+          <!-- hamburger icon -->
+          <img
+            src="./images/icon-hamburger.svg"
+            alt=""
+            class="hamburger h-6 w-8 cursor-pointer lg:hidden"
+          />
+          <!-- close icon -->
+          <img
+            src="./images/icon-close.svg"
+            alt=""
+            class="close-icon h-6 w-8 cursor-pointer lg:hidden"
+          />
+        </header>
+
+        <!-- main section text container -->
+        <div class="px-4 pt-28 text-center lg:pt-32">
+          <h1
+            class="pb-6 font-overpass text-3xl font-bold text-white lg:text-6xl"
+          >
+            A modern publishing platform
+          </h1>
+          <p class="pb-12 text-base text-white/70 lg:text-xl">
+            Grow your audience and build your online brand
+          </p>
+          <!-- main section buttons container -->
+          <div class="grid justify-center gap-4 sm:flex">
+            <button
+              class="rounded-full bg-white px-4 py-2 text-base font-bold text-lightRed hover:bg-lightPink hover:text-white"
+            >
+              Start for Free
+            </button>
+            <button
+              class="rounded-full border-[1px] border-white bg-transparent px-4 py-2 text-base font-bold text-white hover:bg-white hover:text-lightRed"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- designed FF section -->
+      <section
+        class="pb-60 pt-28 text-center md:pt-10 lg:pt-24 xl:pb-72 xl:pt-40"
+      >
+        <h2
+          class="pb-10 font-overpass text-2xl font-bold text-veryDarkBlue lg:pb-24 lg:text-4xl"
+        >
+          Designed for the future
+        </h2>
+        <!-- designed FF text-illustration grid container -->
+        <div class="grid lg:grid-cols-2">
+          <!-- illustration container -->
+          <!-- mobile illustration -->
+          <div class="relative pb-12 lg:order-2">
+            <img
+              src="./images/illustration-editor-mobile.svg"
+              alt=""
+              class="mx-auto lg:hidden"
+            />
+            <!-- desktop illustration -->
+            <svg
+              class="absolute hidden lg:-top-44 lg:left-20 lg:block xl:-top-56 xl:left-14"
+              width="925"
+              height="882"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <linearGradient
+                  x1="0%"
+                  y1="27.881%"
+                  x2="100%"
+                  y2="72.119%"
+                  id="c"
+                >
+                  <stop stop-color="#FF8F71" offset="0%" />
+                  <stop stop-color="#FF3E55" offset="100%" />
+                </linearGradient>
+                <linearGradient
+                  x1="0%"
+                  y1="41.725%"
+                  x2="100%"
+                  y2="58.275%"
+                  id="e"
+                >
+                  <stop stop-color="#FF8F71" offset="0%" />
+                  <stop stop-color="#FF3E55" offset="100%" />
+                </linearGradient>
+                <filter
+                  x="-10.9%"
+                  y="-11.7%"
+                  width="121.8%"
+                  height="132.8%"
+                  filterUnits="objectBoundingBox"
+                  id="b"
+                >
+                  <feOffset
+                    dy="20"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="20"
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                  />
+                  <feColorMatrix
+                    values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0"
+                    in="shadowBlurOuter1"
+                  />
+                </filter>
+                <rect id="a" x="0" y="0" width="642" height="427" rx="15" />
+              </defs>
+              <g transform="translate(40)" fill="none" fill-rule="evenodd">
+                <rect
+                  fill="#2D2E40"
+                  opacity=".08"
+                  transform="matrix(1 0 0 -1 0 890)"
+                  x="145"
+                  y="144"
+                  width="600"
+                  height="602"
+                  rx="300"
+                />
+                <rect
+                  stroke="#2D2E40"
+                  opacity=".5"
+                  transform="matrix(1 0 0 -1 0 882)"
+                  x="105.5"
+                  y="100.5"
+                  width="679"
+                  height="681"
+                  rx="339.5"
+                />
+                <rect
+                  stroke="#2D2E40"
+                  opacity=".25"
+                  transform="matrix(1 0 0 -1 0 882)"
+                  x="5.5"
+                  y=".5"
+                  width="879"
+                  height="881"
+                  rx="439.5"
+                />
+                <g transform="translate(0 242)">
+                  <mask id="d" fill="#fff"><use xlink:href="#a" /></mask>
+                  <g fill-rule="nonzero">
+                    <use fill="#000" filter="url(#b)" xlink:href="#a" />
+                    <use fill="url(#c)" xlink:href="#a" />
+                  </g>
+                  <path
+                    d="M3 125h636a3 3 0 013 3v296a3 3 0 01-3 3H3a3 3 0 01-3-3V128a3 3 0 013-3z"
+                    fill="#2D2E40"
+                    fill-rule="nonzero"
+                    mask="url(#d)"
+                  />
+                  <rect
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    mask="url(#d)"
+                    x="90.523"
+                    y="47.709"
+                    width="135.785"
+                    height="137.165"
+                    rx="3"
+                  />
+                  <ellipse
+                    fill="#2D2E40"
+                    mask="url(#d)"
+                    cx="158.416"
+                    cy="116.888"
+                    rx="39.306"
+                    ry="39.36"
+                  />
+                  <rect
+                    fill="#FFF"
+                    fill-rule="nonzero"
+                    mask="url(#d)"
+                    x="248.939"
+                    y="47.709"
+                    width="302.538"
+                    height="325.617"
+                    rx="3"
+                  />
+                </g>
+                <path
+                  d="M209 284c47.125-73.367 81.977-113.013 104.557-118.938 33.87-8.886 23.765 83.14 72.535 72.473 48.77-10.666 54.716-103.974 91.603-108.37 36.887-4.397 56.402 80.946 72.515 88.81 10.742 5.241 24.005-6.094 39.79-34.007"
+                  stroke="url(#e)"
+                  stroke-width="8"
+                  stroke-linecap="round"
+                  transform="translate(0 242)"
+                />
+              </g>
+            </svg>
+          </div>
+          <!-- text container -->
+          <div
+            class="grid gap-12 px-10 lg:gap-14 lg:pl-20 lg:text-left xl:gap-20 xl:pl-40"
+          >
+            <!-- extensible editor container -->
+            <div class="">
+              <h3
+                class="pb-7 font-overpass text-2xl font-bold text-veryDarkBlue lg:text-3xl"
+              >
+                Introducing an extensible editor
+              </h3>
+              <p class="text-sm leading-loose text-veryDarkGrayishBlue">
+                Blogr features an exceedingly intuitive interface which lets you
+                focus on one thing: creating content. The editor supports
+                management of multiple blogs and allows easy manipulation of
+                embeds such as images, videos, and Markdown. Extensibility with
+                plugins and themes provide easy ways to add functionality or
+                change the looks of a blog.
+              </p>
+            </div>
+            <!-- content management container -->
+            <div class="">
+              <h3
+                class="pb-7 font-overpass text-2xl font-bold text-veryDarkBlue lg:text-3xl"
+              >
+                Robust content management
+              </h3>
+              <p class="text-sm leading-loose text-veryDarkGrayishBlue">
+                Flexible content management enables users to easily move through
+                posts. Increase the usability of your blog by adding customized
+                categories, sections, format, or flow. With this functionality,
+                you’re in full control.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- state of the art section -->
+      <section
+        class="art-section grid rounded-bl-[100px] rounded-tr-[100px] px-6 pb-36 pt-56 lg:grid-cols-2 lg:pb-24 lg:pr-20 lg:pt-28 lg:text-lg xl:pr-40"
+      >
+        <!-- art illustration container -->
+        <div class="relative">
+          <img
+            src="./images/illustration-phones.svg"
+            alt=""
+            class="absolute bottom-12 max-w-[350px] lg:bottom-0 lg:left-0 lg:max-w-[480px] xl:-bottom-40 xl:left-20"
+          />
+        </div>
+        <!-- art text container -->
+        <div class="text-center lg:pl-28 lg:text-left">
+          <h2 class="pb-8 font-overpass text-4xl font-bold text-white">
+            State of the Art Infrastructure
+          </h2>
+          <p
+            class="font-overpass text-base leading-loose text-white/75 lg:leading-relaxed"
+          >
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </section>
+
+      <!-- Free, open, simple section -->
+      <section
+        class="pb-28 pt-20 text-center lg:pb-72 lg:pt-40 xl:pb-80 xl:pr-44 xl:pt-72"
+      >
+        <!-- FOS text-illustration grid container -->
+        <div class="grid lg:grid-cols-2">
+          <!-- illustration container -->
+          <!-- mobile illustration -->
+          <div class="relative pb-12">
+            <img
+              src="./images/illustration-laptop-mobile.svg"
+              alt=""
+              class="mx-auto lg:hidden"
+            />
+            <!-- desktop illustration -->
+            <svg
+              class="absolute hidden lg:-left-96 lg:-top-20 lg:block xl:-left-64 xl:-top-44"
+              width="974"
+              height="786"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs>
+                <linearGradient
+                  x1="0%"
+                  y1="27.97%"
+                  x2="100%"
+                  y2="72.03%"
+                  id="c"
+                >
+                  <stop stop-color="#FF8F71" offset="0%" />
+                  <stop stop-color="#FF3E55" offset="100%" />
+                </linearGradient>
+                <filter
+                  x="-16.5%"
+                  y="-28.5%"
+                  width="132.9%"
+                  height="157.1%"
+                  filterUnits="objectBoundingBox"
+                  id="a"
+                >
+                  <feOffset
+                    dy="20"
+                    in="SourceAlpha"
+                    result="shadowOffsetOuter1"
+                  />
+                  <feGaussianBlur
+                    stdDeviation="20"
+                    in="shadowOffsetOuter1"
+                    result="shadowBlurOuter1"
+                  />
+                  <feColorMatrix
+                    values="0 0 0 0 0.421821759 0 0 0 0 0.554338424 0 0 0 0 0.893710371 0 0 0 0.243444056 0"
+                    in="shadowBlurOuter1"
+                    result="shadowMatrixOuter1"
+                  />
+                  <feMerge>
+                    <feMergeNode in="shadowMatrixOuter1" />
+                    <feMergeNode in="SourceGraphic" />
+                  </feMerge>
+                </filter>
+                <rect id="b" x="0" y="0" width="506" height="335.872" rx="3" />
+                <path
+                  d="M3 0h692.9a3 3 0 013 3v14.105H0V3a3 3 0 013-3z"
+                  id="e"
+                />
+              </defs>
+              <g fill="none" fill-rule="evenodd">
+                <rect
+                  stroke="#2D2E40"
+                  opacity=".5"
+                  transform="matrix(1 0 0 -1 0 786)"
+                  x="59.5"
+                  y="59.5"
+                  width="665"
+                  height="667"
+                  rx="332.5"
+                />
+                <rect
+                  stroke="#2D2E40"
+                  opacity=".25"
+                  transform="matrix(1 0 0 -1 0 786)"
+                  x=".5"
+                  y=".5"
+                  width="783"
+                  height="785"
+                  rx="391.5"
+                />
+                <rect
+                  fill="#2D2E40"
+                  opacity=".08"
+                  transform="matrix(1 0 0 -1 0 786)"
+                  x="117"
+                  y="117"
+                  width="550"
+                  height="552"
+                  rx="275"
+                />
+                <g transform="translate(190 192)" filter="url(#a)">
+                  <rect
+                    fill="#535353"
+                    fill-rule="nonzero"
+                    x="82"
+                    y="16"
+                    width="538"
+                    height="368"
+                    rx="12"
+                  />
+                  <rect
+                    fill="#1D1D25"
+                    fill-rule="nonzero"
+                    x="85"
+                    y="19"
+                    width="532"
+                    height="362"
+                    rx="10"
+                  />
+                  <g transform="translate(99 32)">
+                    <mask id="d" fill="#fff"><use xlink:href="#b" /></mask>
+                    <use fill="url(#c)" fill-rule="nonzero" xlink:href="#b" />
+                    <rect
+                      fill="#F9F6F6"
+                      fill-rule="nonzero"
+                      mask="url(#d)"
+                      x="-.325"
+                      y="60.293"
+                      width="506"
+                      height="275.838"
+                      rx="3"
+                    />
+                    <g mask="url(#d)" fill-rule="nonzero">
+                      <g transform="translate(71.475 37.46)">
+                        <rect
+                          fill="#FFF"
+                          width="106.646"
+                          height="256.541"
+                          rx="3"
+                        />
+                        <rect
+                          fill="#FFF"
+                          x="124.798"
+                          width="238.251"
+                          height="256.541"
+                          rx="3"
+                        />
+                        <rect
+                          fill="#E7E7E7"
+                          x="135.009"
+                          y="13.622"
+                          width="217.83"
+                          height="60.162"
+                          rx="3"
+                        />
+                        <rect
+                          fill="#E7E7E7"
+                          x="135.009"
+                          y="86.27"
+                          width="64.668"
+                          height="60.162"
+                          rx="3"
+                        />
+                        <rect
+                          fill="#E7E7E7"
+                          x="215.561"
+                          y="86.27"
+                          width="137.278"
+                          height="60.162"
+                          rx="3"
+                        />
+                      </g>
+                    </g>
+                  </g>
+                  <g
+                    transform="translate(349)"
+                    fill="#4A5166"
+                    fill-rule="nonzero"
+                    opacity=".098"
+                  >
+                    <rect width="13.6" height="3" rx="1.5" />
+                    <rect x="16.8" width="3.2" height="3" rx="1.5" />
+                  </g>
+                  <g transform="translate(0 380)">
+                    <mask id="f" fill="#fff"><use xlink:href="#e" /></mask>
+                    <use fill="#52526F" fill-rule="nonzero" xlink:href="#e" />
+                    <rect
+                      fill="#2F2F47"
+                      fill-rule="nonzero"
+                      mask="url(#f)"
+                      x="292.371"
+                      y="-41.908"
+                      width="114.156"
+                      height="52.171"
+                      rx="10"
+                    />
+                  </g>
+                  <path
+                    d="M0 397h699a6 6 0 01-6 6H6a6 6 0 01-6-6z"
+                    fill="#393A56"
+                    fill-rule="nonzero"
+                  />
+                </g>
+              </g>
+            </svg>
+          </div>
+          <!-- text container -->
+          <div
+            class="grid gap-12 px-10 lg:gap-14 lg:pl-20 lg:text-left xl:gap-20 xl:px-0 xl:pl-40"
+          >
+            <!-- extensible editor container -->
+            <div class="">
+              <h3
+                class="pb-7 font-overpass text-2xl font-bold text-veryDarkBlue lg:text-3xl"
+              >
+                Free, open, simple
+              </h3>
+              <p class="text-sm leading-loose text-veryDarkGrayishBlue">
+                Blogr is a free and open source application backed by a large
+                community of helpful developers. It supports features such as
+                code syntax highlighting, RSS feeds, social media integration,
+                third-party commenting tools, and works seamlessly with Google
+                Analytics. The architecture is clean and is relatively easy to
+                learn.
+              </p>
+            </div>
+            <!-- content management container -->
+            <div class="">
+              <h3
+                class="pb-7 font-overpass text-2xl font-bold text-veryDarkBlue lg:text-3xl"
+              >
+                Powerful tooling
+              </h3>
+              <p class="text-sm leading-loose text-veryDarkGrayishBlue">
+                Batteries included. We built a simple and straightforward CLI
+                tool that makes customization and deployment a breeze, but
+                capable of producing even the most complicated sites.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer
+        class="grid items-start justify-center gap-12 rounded-tr-[100px] bg-veryDarkBlackBlue py-20 text-center font-normal text-grayishBlue md:grid-cols-2 lg:grid-cols-4"
+      >
+        <img src="./images/logo.svg" alt="" class="mx-auto self-start" />
+        <ul class="grid gap-1.5">
+          <li class="pb-4 font-bold text-white"><a href="#">Product</a></li>
+          <li><a class="hover:underline" href="#">Overview</a></li>
+          <li><a class="hover:underline" href="#">Pricing</a></li>
+          <li><a class="hover:underline" href="#">Marketplace</a></li>
+          <li><a class="hover:underline" href="#">Features</a></li>
+          <li><a class="hover:underline" href="#">Integrations</a></li>
+        </ul>
+        <ul class="grid gap-1.5">
+          <li class="pb-4 font-bold text-white"><a href="#">Company</a></li>
+          <li><a class="hover:underline" href="#">About</a></li>
+          <li><a class="hover:underline" href="#">Team</a></li>
+          <li><a class="hover:underline" href="#">Blog</a></li>
+          <li><a class="hover:underline" href="#">Careers</a></li>
+        </ul>
+        <ul class="grid gap-1.5">
+          <li class="pb-4 font-bold text-white"><a href="#">Connect</a></li>
+          <li><a class="hover:underline" href="#">Contact</a></li>
+          <li><a class="hover:underline" href="#">Newsletter</a></li>
+          <li><a class="hover:underline" href="#">Linkedin</a></li>
+        </ul>
+      </footer>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.intro {
+  background: url("./images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: top 35% right 65%;
+  background-size: auto;
+}
+
+.art-section {
+  background: url("./images/bg-pattern-circles.svg"),
+    linear-gradient(hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: bottom 250% right 50%;
+  background-repeat: no-repeat;
+  background-size: 150%;
+}
+
+@media (min-width: 500px) {
+  .art-section {
+    background-position: center;
+    background-size: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .intro {
+    background: url("./images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: top 52% right 75%;
+    background-size: auto;
+  }
+
+  .art-section {
+    background-position:
+      bottom 10% left -35%,
+      center;
+    background-size: 60%, 100%;
+  }
+}
